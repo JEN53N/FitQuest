@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="FitnessApp.GreetingPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Welcome">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30">
+
+            <Label x:Name="GreetingLabel"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#388E3C"
+                   Margin="0,20,0,20" />
+
+            <Label Text="Tasks"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="#1976D2"
+                   Margin="0,20,0,10" />
+
+            <Button x:Name="UploadVideoButton"
+                    Text="Upload Video for Pushups"
+                    FontSize="16"
+                    BackgroundColor="#FF9800"
+                    TextColor="White"
+                    Clicked="OnUploadVideoClicked" />
+
+            <Button x:Name="AnalyzeButton"
+                    Text="Analyze Pushups"
+                    FontSize="16"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    IsVisible="False"
+                    Clicked="OnAnalyzeClicked" />
+
+            <Label x:Name="BmiLabel"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#D32F2F"
+                   Margin="0,20,0,0"
+                   IsVisible="False" />
+
+            <Label x:Name="StatusLabel"
+                   FontSize="16"
+                   TextColor="#666666"
+                   Margin="0,10,0,0"
+                   IsVisible="False" />
+
+            <Label x:Name="ResultLabel"
+                   FontSize="16"
+                   TextColor="#1976D2"
+                   Margin="0,10,0,0"
+                   IsVisible="False" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

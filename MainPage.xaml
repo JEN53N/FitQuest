@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="FitnessApp.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Sign Up">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30">
+
+            <Label Text="Welcome to Fitness Tracker"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#1976D2"
+                   Margin="0,20,0,40" />
+
+            <Entry x:Name="NameEntry"
+                   Placeholder="Enter your name"
+                   FontSize="16" />
+
+            <Entry x:Name="AgeEntry"
+                   Placeholder="Enter your age"
+                   Keyboard="Numeric"
+                   FontSize="16" />
+
+            <Entry x:Name="EmailEntry"
+                   Placeholder="Enter your email"
+                   Keyboard="Email"
+                   FontSize="16" />
+
+            <Label Text="BMI Information"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,0" />
+
+            <Entry x:Name="HeightEntry"
+                   Placeholder="Height (cm)"
+                   Keyboard="Numeric"
+                   FontSize="16" />
+
+            <Entry x:Name="WeightEntry"
+                   Placeholder="Weight (kg)"
+                   Keyboard="Numeric"
+                   FontSize="16" />
+
+            <Button x:Name="SignupButton"
+                    Text="Sign Up"
+                    FontSize="18"
+                    BackgroundColor="#1976D2"
+                    TextColor="White"
+                    Margin="0,30,0,0"
+                    Clicked="OnSignupClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
